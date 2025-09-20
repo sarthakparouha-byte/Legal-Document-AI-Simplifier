@@ -1,0 +1,219 @@
+/* Enhanced Features Styles */
+
+/* Progress Container */
+.progress-container {
+  width: 100%;
+  max-width: 300px;
+  margin-top: 1rem;
+}
+
+.upload-progress-bar {
+  height: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.progress-text {
+  font-size: 0.9rem;
+  color: #667eea;
+  font-weight: 600;
+}
+
+/* Search Input */
+.search-input {
+  width: 250px;
+  margin-right: 1rem;
+  border-radius: 8px;
+  border: 2px solid #e2e8f0;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+/* Dashboard Actions */
+.dashboard-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Theme Toggle */
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+/* Dark Mode Styles */
+.dark {
+  background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+  color: #e2e8f0;
+}
+
+.dark .app-header {
+  background: rgba(26, 32, 44, 0.95);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dark .header-content h1 {
+  color: #e2e8f0;
+}
+
+.dark .header-content p {
+  color: #a0aec0;
+}
+
+.dark .upload-area,
+.dark .dashboard,
+.dark .analysis-container {
+  background: rgba(45, 55, 72, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dark .upload-area:hover {
+  background: rgba(45, 55, 72, 1);
+}
+
+.dark .document-card {
+  background: rgba(26, 32, 44, 0.8);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.dark .document-card:hover {
+  background: rgba(26, 32, 44, 0.9);
+  border-color: #667eea;
+}
+
+.dark .summary-content,
+.dark .clause-extract,
+.dark .risk-content {
+  background: rgba(26, 32, 44, 0.8);
+  border-left-color: #667eea;
+}
+
+.dark .clause-item {
+  background: rgba(26, 32, 44, 0.8);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.dark .chat-item {
+  background: rgba(26, 32, 44, 0.8);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Enhanced Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.document-card {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.document-card:nth-child(odd) {
+  animation-delay: 0.1s;
+}
+
+.document-card:nth-child(even) {
+  animation-delay: 0.2s;
+}
+
+.tab-content {
+  animation: slideIn 0.3s ease-out;
+}
+
+/* Enhanced Hover Effects */
+.upload-new-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+}
+
+.back-btn:hover {
+  transform: translateX(-2px);
+}
+
+.analyze-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+/* Loading States */
+.loading-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  backdrop-filter: blur(5px);
+}
+
+.dark .loading-overlay {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* Success States */
+.success-animation {
+  animation: bounce 0.6s ease-out;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Enhanced Responsive Design for New Features */
+@media (max-width: 768px) {
+  .dashboard-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-input {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .theme-toggle {
+    margin-top: 0.5rem;
+  }
+
+  .progress-container {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .theme-toggle {
+    font-size: 1rem;
+  }
+
+  .progress-text {
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+python-dotenv
+pymongo
+motor
+pydantic
+python-multipart
+PyPDF2
+httpx
+--extra-index-url https://d33sy5i8bnduwe.cloudfront.net/simple/
+emergentintegrations
