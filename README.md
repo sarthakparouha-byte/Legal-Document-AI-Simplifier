@@ -13,9 +13,6 @@
 - [Planned Enhancements](#planned-enhancements)  
 - [Architecture & Tech Stack](#architecture--tech-stack)  
 - [Setup & Installation](#setup--installation)  
-- [Usage](#usage)  
-- [Contributing](#contributing)  
-- [License](#license)  
 
 ---
 
