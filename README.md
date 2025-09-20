@@ -4,7 +4,7 @@ An AI-powered legal document simplification tool that makes complex legal docume
 Problem Statement
 Legal documents are everywhere in business, but they're written in complex legal language that's impossible for regular people to understand. Current solutions are either:
 
-Expensive legal consultations ($150-300/hour)
+Expensive legal consultations 
 Generic AI tools without legal context
 No solution at all (signing documents blindly)
 
